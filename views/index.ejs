@@ -4,7 +4,14 @@
 <body>
     
     <div class="container">
-        <h1>Hola mundo!!</h1>
+        <h1>Menú de alimentos</h1>
+        <ul>
+            <%dishes.forEach(function(dish){%>
+                <li>
+                    Nombre: <%= dish.name%>
+                </li>
+            <% }); %>
+        </ul>
     </div>
     
 
