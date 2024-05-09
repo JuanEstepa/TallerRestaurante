@@ -5,4 +5,4 @@ Taller: Menú de comidas de un restaurante
 ## INSTALACIÓN
 
 npm i nodemon -D
-npm i express ejs path# TallerRestaurante
+npm i express ejs path
