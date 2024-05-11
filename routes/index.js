@@ -24,4 +24,13 @@ router.get("/", (req, res) => {
   });
 });
 
+//RENDER DE UN FORMULARIO PARA ADD
+router.get("/add", (req, res) => {
+  res.render("add.ejs", {
+    title: "Agregar plato",
+  });
+});
+
+//!!!!!!!!!!falta hacer el metodo post
+
 module.exports = router;
