@@ -3,76 +3,106 @@
     "id": 1,
     "name": "Sopa de tortilla",
     "price": 37708,
+    "type":"Principal",
+    "description":"La sopa de tortilla es un caldo de pollo con comino y chile en polvo, acompañado de tiras de tortilla, aguacate, queso rallado, cilantro fresco y jugo de lima, creando una experiencia deliciosa y reconfortante.",
     "image": "https://editorialtelevisa.brightspotcdn.com/dims4/default/2a600c2/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2019%2F11%2Fsopa-de-frijol-con-tortilla.jpg"
   }, {
     "id": 2,
     "name": "Filete mignon",
     "price": 71095,
+    "type":"Principal",
+    "description":"El filete mignon es un corte de carne de res extremadamente tierno y jugoso, conocido por su marmoleo de grasa intramuscular. Se sazona con sal y pimienta, se cocina a la parrilla y se sirve con frecuencia con guarniciones elegantes.",
     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESmx8FSzdopbhrxheFDhHwIXHLAehbKr3dSyPbXscVA&s"
   }, {
     "id": 3,
     "name": "Paella valenciana",
     "price": 16823,
+    "type":"Principal",
+    "description":"",
     "image":"https://wildfork.mx/cdn/shop/articles/Paella_Mixta.jpg?v=1613965691"
   }, {
     "id": 4,
     "name": "Sushi variado",
     "price": 48214,
+    "type":"Principal",
+    "description":"",
     "image":"https://as1.ftcdn.net/v2/jpg/06/12/90/08/1000_F_612900812_cTUxOqlcDcLce9c9dvXiV2y6iJDCn3gG.jpg"
   }, {
     "id": 5,
     "name": "Ensalada César",
     "price": 48633,
+    "type":"Entrada",
+    "description":"",
     "image": "https://sedeenvigado.lamatriarca.com/wp-content/uploads/2022/12/ensalada-cesar.jpg"
   }, {
     "id": 6,
     "name": "Risotto de champiñones",
     "price": 57326,
+    "type":"Principal",
+    "description":"",
     "image":"https://m.media-amazon.com/images/I/81yf9cMGqkL._AC_UF1000,1000_QL80_.jpg"
   }, {
     "id": 7,
     "name": "Tacos al pastor",
     "price": 56884,
+    "type":"Principal",
+    "description":"",
     "image":"https://editorialtelevisa.brightspotcdn.com/dims4/default/51f0046/2147483647/strip/true/crop/742x742+0+6/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Ffd%2Fa9%2F08e80672478eb3bdc17632c9ea12%2Ftacos-al-pastor-de-soya.JPG"
   }, {
     "id": 8,
     "name": "Lasaña boloñesa",
     "price": 40799,
+    "type":"Principal",
+    "description":"",
     "image":"https://tremus.cl/wp-content/uploads/2022/08/01490148.jpg"
   }, {
     "id": 9,
     "name": "Pollo a la parrilla",
     "price": 85915,
+    "type":"Principal",
+    "description":"",
     "image":"https://www.campoazul.co/cdn/shop/files/muslos-de-pollo-a-la-parrilla_1024x.png?v=1713212902"
   }, {
     "id": 10,
     "name": "Curry de pollo",
     "price": 31952,
+    "type":"Principal",
+    "description":"",
     "image":"https://editorialtelevisa.brightspotcdn.com/dims4/default/c041186/2147483647/strip/true/crop/672x672+288+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1c%2F55%2Fdbb52bba417eabb74c4f91503695%2Fpollo-al-curry-con-arroz-receta-facil-y-rapida.jpeg"
   }, {
     "id": 11,
     "name": "Ceviche peruano",
     "price": 54435,
+    "type":"Principal",
+    "description":"",
     "image":"https://behnkehome.com/cdn/shop/articles/RECETA_CEVICHE_CHAMPINONES_1_1000_x_1000_px.jpg?v=1649180844"
   }, {
     "id": 12,
     "name": "Espaguetis carbonara",
     "price": 16350,
+    "type":"Principal",
+    "description":"",
     "image":"https://www.justspices.es/media/recipe/espaguetis-carbonara.jpg"
   }, {
     "id": 13,
     "name": "Hamburguesa gourmet",
     "price": 46104,
+    "type":"Principal",
+    "description":"",
     "image": "https://as1.ftcdn.net/v2/jpg/06/12/94/52/1000_F_612945210_jdlVDVQsQ91BkMCtSlJFxyvu1EnhThWc.jpg"
   }, {
     "id": 14,
     "name": "Churrasco",
     "price": 81222,
+    "type":"Principal",
+    "description":"",
     "image":"https://tienda.atlantic.la/cdn/shop/files/FOTOSDEEXITO_CHURRASCO_SELECTA_MOMENTO_1024x.jpg?v=1695144365"
   }, {
     "id": 15,
     "name": "Mojarra Frita",
     "price": 77969,
+    "type":"Principal",
+    "description":"",
     "image":"https://rinconcitochapin.com.gt/wp-content/uploads/2021/08/mojarra-frita.png"
   }
 ]

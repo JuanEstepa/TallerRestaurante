@@ -3,33 +3,90 @@
 <%-include('./templates/header.ejs')%>
 <body>
     
-    <div class="container">
-        <h1 class="text-center">Menú de alimentos</h1>
+    <div class="container ">
+        <h1 class="text-center mt-3">MENÚ</h1>
 
+        <a href="/add" class="btn-secondary btn mt-2 mb-4">Agregar un nuevo plato</a>
 
         <!-- SE VERIFICA QUE EL JSON TENGA DATOS -->
         <%if(dishes.length > 0 ){%>
-            <div class="row row-cols-3">
+            <div class="justify-content-center">
+                <h2>ENTRADAS</h2>
+                <div class="row row-cols-3">
+                    <!-- SE MAPEAN TODOS LOS DATOS DEL JSON -->
+                    <%dishes.forEach(function(dish){%>
 
-                <!-- SE MAPEAN TODOS LOS DATOS DEL JSON -->
-                <%dishes.forEach(function(dish){%>
+                        <!--TARJETAS DE CADA PLATO-->
+                        <% if (dish.type == "Entrada") {%>
+                            <div class="card col m-3 text-center" style="width: 18rem;">
+                                <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <p class="collapse" id="description"><%=dish.description%></p>
+                                    <p class="card-text">Precio: $<%=dish.price%>  COP</p>
+                                    <div class="row">
+                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Descripción
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                        <% } %>
+                    <% }); %>
+                </div>
+                <h2>PRINCIPAL</h2>
+                <div class="row row-cols-3">
+                    <!-- SE MAPEAN TODOS LOS DATOS DEL JSON -->
+                    <%dishes.forEach(function(dish){%>
 
-                    <!--TARJETAS DE CADA PLATO-->
-                    <div class="card col m-3 text-center" style="width: 18rem;">
-                        <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
-                        <div class="card-body">
-                        <h5 class="card-title"><%=dish.name%></h5>
-                        <p class="card-text">Precio: $<%=dish.price%>  COP</p>
-                        <a href="#" class="btn btn-danger">Eliminar</a>
-                        </div>
-                    </div>
-                <% }); %>
+                        <!--TARJETAS DE CADA PLATO-->
+                        <% if (dish.type == "Principal") {%>
+                            <div class="card col m-3 text-center" style="width: 18rem;">
+                                <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <p class="collapse" id="description"><%=dish.description%></p>
+                                    <p class="card-text">Precio: $<%=dish.price%>  COP</p>
+                                    <div class="row">
+                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Descripción
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                        <% } %>
+                    <% }); %>
+                </div>
+                <h2>POSTRES</h2>
+                <div class="row row-cols-3">
+                    <!-- SE MAPEAN TODOS LOS DATOS DEL JSON -->
+                    <%dishes.forEach(function(dish){%>
+
+                        <!--TARJETAS DE CADA PLATO-->
+                        <% if (dish.type == "Postre") {%>
+                            <div class="card col m-3 text-center" style="width: 18rem;">
+                                <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <p class="collapse" id="description"><%=dish.description%></p>
+                                    <p class="card-text">Precio: $<%=dish.price%>  COP</p>
+                                    <div class="row">
+                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            Descripción
+                                        </a>
+                                    </div>  
+                                </div>
+                            </div>
+                        <% } %>
+                    <% }); %>
+                </div>
             </div>
         <%}else{%>
             <h2>No hay articulos en el menú</h2>
         <%}%>
-
-        <a href="/add" class="btn-secondary btn mt-2 mb-4">Agregar un nuevo plato</a>
 
     </div>
     
