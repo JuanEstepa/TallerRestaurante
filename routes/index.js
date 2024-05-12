@@ -28,9 +28,49 @@ router.get("/", (req, res) => {
 router.get("/add", (req, res) => {
   res.render("add.ejs", {
     title: "Agregar plato",
+    dishes: dishes,
   });
 });
 
-//!!!!!!!!!!falta hacer el metodo post
+//METODO POST
+router.post("/", (req, res) => {
+  //SE OBTIENE EL PLATO
+  const newDish = req.body;
+  console.log(`error: ${newDish}`);
+
+  //LEER EL JSON
+  fs.readFile("resources/dishes.json", "utf-8", (err, data) => {
+    if (err) {
+      console.error("Error al leer el archivo JSON:", err);
+      res.status(500).send("Error interno del servidor");
+      return;
+    }
+    let dishes = [];
+    if (data) {
+      dishes = JSON.parse(data);
+    }
+
+    //AGREGA EL NUEVO PLATO
+    dishes.push(newDish);
+
+    //GUARDAR JSON ACTUALIZADO
+    fs.writeFile(
+      "resources/dishes.json",
+      JSON.stringify(dishes, null, 2),
+      "utf-8",
+      () => {
+        if (err) {
+          console.error("Error al escribir en el archivo JSON:", err);
+          res.status(500).send("Error interno del servidor");
+          return;
+        }
+        console.log("Datos guardados correctamente");
+        res.status(200);
+      }
+    );
+  });
+
+  res.redirect("/");
+});
 
 module.exports = router;
