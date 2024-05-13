@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Sopa de tortilla",
-    "price": 37708,
-    "type": "Principal",
-    "description": "La sopa de tortilla es un caldo de pollo con comino y chile en polvo, acompañado de tiras de tortilla, aguacate, queso rallado, cilantro fresco y jugo de lima, creando una experiencia deliciosa y reconfortante.",
-    "image": "https://editorialtelevisa.brightspotcdn.com/dims4/default/2a600c2/2147483647/strip/true/crop/560x560+220+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2019%2F11%2Fsopa-de-frijol-con-tortilla.jpg"
-  },
-  {
     "id": 2,
     "name": "Filete mignon",
     "price": 71095,
@@ -80,14 +72,6 @@
     "image": "https://editorialtelevisa.brightspotcdn.com/dims4/default/c041186/2147483647/strip/true/crop/672x672+288+0/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F1c%2F55%2Fdbb52bba417eabb74c4f91503695%2Fpollo-al-curry-con-arroz-receta-facil-y-rapida.jpeg"
   },
   {
-    "id": 11,
-    "name": "Ceviche peruano",
-    "price": 54435,
-    "type": "Principal",
-    "description": "",
-    "image": "https://behnkehome.com/cdn/shop/articles/RECETA_CEVICHE_CHAMPINONES_1_1000_x_1000_px.jpg?v=1649180844"
-  },
-  {
     "id": 12,
     "name": "Espaguetis carbonara",
     "price": 16350,
@@ -128,14 +112,6 @@
     "image": "https://editorialtelevisa.brightspotcdn.com/dims4/default/14dffb2/2147483647/strip/true/crop/740x740+0+19/resize/1000x1000!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc1%2F66%2F9ddf596044b0aef62ac5724797ab%2Ffresas-con-crema.jpg"
   },
   {
-    "id": "17",
-    "name": "Platanitos",
-    "price": "6000",
-    "type": "Entrada",
-    "description": "Deliciosas tajadas de plátano frito con exquisita salsa de la casa",
-    "image": "https://monnorestaurante.com/wp-content/uploads/2022/12/IMG_4187.jpg"
-  },
-  {
     "id": "18",
     "name": "Midnight",
     "price": "35000",
@@ -150,5 +126,29 @@
     "type": "Postre",
     "description": "Tortilla con relleno de 1 fruta, 1 salsa y 2 toppings al gusto:\nFrutas: banano, mango, fresa\n",
     "image": "https://ds1e83w8pn0gs.cloudfront.net/fotosmultisite/1440-1.jpg"
+  },
+  {
+    "id": "123",
+    "name": "Bandeja paisa",
+    "price": "60000",
+    "type": "Principal",
+    "description": "Plato típico colombiano que incluye arroz, frijoles, carne molida, chicharrón, huevo frito, plátano maduro frito, aguacate y arepa.",
+    "image": "https://lamatriarca.com/wp-content/uploads/2022/12/bandeja-paisa.webp"
+  },
+  {
+    "id": "30",
+    "name": "Queso con jamón serrano",
+    "price": "10000",
+    "type": "Entrada",
+    "description": "Exquisito queso bougges con jamón serrano de la mas alta calidad",
+    "image": "https://static2.imahe.cl/20436-large_default/plato-entrada-borde-grueso-20cm.jpg"
+  },
+  {
+    "id": "1234",
+    "name": "Empanadas ",
+    "price": "3500",
+    "type": "Entrada",
+    "description": "Deliciosas empanadas de carne, mixta, pollo, ranchera y hawaiana",
+    "image": "https://tostonrestaurante.com/wp-content/uploads/2022/08/Empanaditas-cartuchos-de-chorizo.jpg"
   }
 ]

@@ -9,10 +9,11 @@
 
         <!--FORMULARIO-->
 
-        <form >
+        <fieldset>
+          <form>
             <div class="form-group my-4">
                 <label for="id">id: </label>
-                <input type="number" class="form-control" id="id" value="<%=dishes.length +1 %>" readonly required>
+                <input type="number" class="form-control" id="id" required >
               </div>
             <div class="form-group my-4">
               <label for="name">Nombre:</label>
@@ -36,13 +37,14 @@
             </div>
             <div class="form-group my-4">
                 <label for="image">Imagen:</label>
-                <input required type="text" class="form-control" id="image" placeholder="Ingrese el link de la imagen a usar">
+                <input required type="text" class="form-control" id="image" placeholder="Ingrese el link de la imagen a usar" >
               </div>
             <div class="row">
-                <button id="btnSend" type="submit" class="col btn btn-secondary m-2">Enviar</button>
+                <button id="btnSend" type="submit" class="col btn btn-secondary m-2" required>Enviar</button>
                 <a href="/" class="col btn btn-secondary m-2">Regresar</a>
             </div>
           </form>
+        </fieldset>
     </div>
     
     <script src="script.js"></script>

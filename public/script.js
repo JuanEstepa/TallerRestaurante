@@ -15,17 +15,20 @@ document.getElementById("btnSend").addEventListener("click", () => {
     image: image,
   };
 
-  console.log(JSON.stringify(dish));
-
-  const URL = "/";
-  fetch(URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(dish),
-  })
-    .then((data) => data.json())
-    .then(() => console.log(data))
-    .catch((err) => alert(err));
+  if (dish.id == "") {
+    alert("Please enter a valid ID");
+  } else {
+    console.log(JSON.stringify(dish));
+    const URL = "/";
+    fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dish),
+    })
+      .then((data) => data.json())
+      .then(() => console.log(data))
+      .catch((err) => alert(err));
+  }
 });
