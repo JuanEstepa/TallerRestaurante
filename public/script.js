@@ -1,4 +1,4 @@
-document.getElementById("btnSend").addEventListener("click", (event) => {
+document.getElementById("btnSend").addEventListener("click", () => {
   const id = document.getElementById("id").value;
   const name = document.getElementById("name").value;
   const price = document.getElementById("price").value;

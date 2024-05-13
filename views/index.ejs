@@ -21,11 +21,11 @@
                             <div class="card col m-3 text-center" style="width: 18rem;">
                                 <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
                                 <div class="card-body">
-                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <h5 id="name" class="card-title"><%=dish.name%></h5>
                                     <p class="collapse" id="description"><%=dish.description%></p>
                                     <p class="card-text">Precio: $<%=dish.price%>  COP</p>
                                     <div class="row">
-                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <button id="btnEliminar" class="col m-1 btn btn-danger">Eliminar</button>
                                         <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
                                             Descripción
                                         </a>
@@ -45,11 +45,11 @@
                             <div class="card col m-3 text-center" style="width: 18rem;">
                                 <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
                                 <div class="card-body">
-                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <h5 id="name" class="card-title"><%=dish.name%></h5>
                                     <p class="collapse" id="description"><%=dish.description%></p>
                                     <p class="card-text">Precio: $<%=dish.price%>  COP</p>
                                     <div class="row">
-                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <button id="btnEliminar" class="col m-1 btn btn-danger">Eliminar</button>
                                         <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
                                             Descripción
                                         </a>
@@ -69,11 +69,11 @@
                             <div class="card col m-3 text-center" style="width: 18rem;">
                                 <img src="<%=dish.image%>" class="card-img-top" alt="<%=dish.name%>">
                                 <div class="card-body">
-                                    <h5 class="card-title"><%=dish.name%></h5>
+                                    <h5 id="name" class="card-title"><%=dish.name%></h5>
                                     <p class="collapse" id="description"><%=dish.description%></p>
                                     <p class="card-text">Precio: $<%=dish.price%>  COP</p>
                                     <div class="row">
-                                        <a href="#" class="col m-1 btn btn-success">Agregar</a>
+                                        <button id="btnEliminar" class="col m-1 btn btn-danger">Eliminar</button>
                                         <a class="col m-1 btn btn-success" data-bs-toggle="collapse" href="#description" role="button" aria-expanded="false" aria-controls="collapseExample">
                                             Descripción
                                         </a>
@@ -90,6 +90,8 @@
 
     </div>
     
+
+    <script src="delete.js"></script>
     <!--FOOTER QUE EJECTURA UN SCRIPT PARA EL BOOTSTRAP-->
     <%-include('./templates/footer.ejs')%>
 </body>
