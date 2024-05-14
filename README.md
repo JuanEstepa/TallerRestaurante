@@ -6,3 +6,7 @@ Taller: Menú de comidas de un restaurante
 
 npm i nodemon -D
 npm i express ejs path
+
+## INICIACION
+
+npm start
