@@ -48,13 +48,13 @@ router.delete("/:id", (req, res) => {
       "resources/dishes.json",
       JSON.stringify(dishes, null, 2),
       "utf-8",
-      () => {
+      (err) => {
         if (err) {
           console.error("Error al escribir en el archivo JSON:", err);
           res.status(500).send("Error interno del servidor");
           return;
         }
-        console.log("Datos guardados correctamente");
+        console.log("Datos guardados correctamente <3");
         res.status(200);
       }
     );
